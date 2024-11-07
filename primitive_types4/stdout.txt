@@ -1,0 +1,23 @@
+Checking test execution result...
+[!] Test execution result: PASSED
+Checking source code format...
+  Preparing source code for format check...
+  Running format check...
+// =====================================================
+//  Running cargo fmt...
+// =====================================================
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:5:
+ // Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand
+ // for a hint.
+ 
+-
+ #[test]
+ fn slice_out_of_array() {
+     let a = [1, 2, 3, 4, 5];
+
+
+// =====================================================
+//    Running cargo clippy...
+// =====================================================
+
+[!] Source code format check: FAILED

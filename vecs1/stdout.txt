@@ -1,0 +1,27 @@
+Checking test execution result...
+[!] Test execution result: PASSED
+Checking source code format...
+  Preparing source code for format check...
+  Running format check...
+// =====================================================
+//  Running cargo fmt...
+// =====================================================
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:7:
+ //
+ // Execute `rustlings hint vecs1` or use the `hint` watch subcommand for a hint.
+ 
+-
+ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
+     let a = [10, 20, 30, 40]; // a plain array
+-    let v = vec![10, 20, 30, 40];// TODO: declare your vector here with the macro for vectors
++    let v = vec![10, 20, 30, 40]; // TODO: declare your vector here with the macro for vectors
+ 
+     (a, v)
+ }
+
+
+// =====================================================
+//    Running cargo clippy...
+// =====================================================
+
+[!] Source code format check: FAILED

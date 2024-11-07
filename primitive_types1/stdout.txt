@@ -1,0 +1,32 @@
+Checking test execution result...
+[!] Test execution result: PASSED
+Checking source code format...
+  Preparing source code for format check...
+  Running format check...
+// =====================================================
+//  Running cargo fmt...
+// =====================================================
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:6:
+ // Execute `rustlings hint primitive_types1` or use the `hint` watch subcommand
+ // for a hint.
+ 
+-
+ fn main() {
+     // Booleans (`bool`)
+ 
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:15:
+         println!("Good morning!");
+     }
+ 
+-    let is_evening = false;// Finish the rest of this line like the example! Or make it be false!
++    let is_evening = false; // Finish the rest of this line like the example! Or make it be false!
+     if is_evening {
+         println!("Good evening!");
+     }
+
+
+// =====================================================
+//    Running cargo clippy...
+// =====================================================
+
+[!] Source code format check: FAILED

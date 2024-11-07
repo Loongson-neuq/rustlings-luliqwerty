@@ -1,0 +1,48 @@
+Checking test execution result...
+[!] Test execution result: PASSED
+Checking source code format...
+  Preparing source code for format check...
+  Running format check...
+// =====================================================
+//  Running cargo fmt...
+// =====================================================
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:7:
+ // Execute `rustlings hint move_semantics2` or use the `hint` watch subcommand
+ // for a hint.
+ 
+-
+ fn main() {
+     let vec0 = Vec::new();
+ 
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:14:
+     let mut vec1 = fill_vec(vec0.clone());
+     let mut vec0 = fill_vec(vec0.clone());
+ 
+-    println!("{} has length {}, with contents: `{:?}`", "vec0", vec0.len(), vec0);
++    println!(
++        "{} has length {}, with contents: `{:?}`",
++        "vec0",
++        vec0.len(),
++        vec0
++    );
+ 
+     vec1.push(88);
+ 
+Diff in /home/runner/work/rustlings-luliqwerty/rustlings-luliqwerty/format_check/src/lib.rs:21:
+-    println!("{} has length {}, with contents `{:?}`", "vec1", vec1.len(), vec1);
++    println!(
++        "{} has length {}, with contents `{:?}`",
++        "vec1",
++        vec1.len(),
++        vec1
++    );
+ }
+ 
+ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+
+
+// =====================================================
+//    Running cargo clippy...
+// =====================================================
+
+[!] Source code format check: FAILED
